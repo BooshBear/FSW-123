@@ -1,0 +1,12 @@
+#root {
+    display: flex;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+
+    margin: 1em;
+    padding: 20px;
+
+    text-align: center;
+}
