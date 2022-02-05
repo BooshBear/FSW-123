@@ -1,21 +1,17 @@
 
 
-function TodoList() {
-  let data = ["Do Homework", "Study", "Clean House", "Do Dishes"]
+function TodoList(props) {
+    let stuff = props.data
+    let map1 = stuff.map((item, index) => {
+      return (
+        <li key={item.text}>{item.text}</li>
+      )
+    })
     return (
       <>
-        <div id={"wrapper"}>
-          <input type={"checkbox"}></input><h3> {data[0]}</h3>
-        </div>
-        <div id={"wrapper"}>
-          <input type={"checkbox"}></input><h3> {data[1]}</h3>
-        </div>
-        <div id={"wrapper"}>
-          <input type={"checkbox"}></input><h3> {data[2]}</h3>
-        </div>
-        <div id={"wrapper"}>
-          <input type={"checkbox"}></input><h3> {data[3]}</h3>
-        </div>
+        <ul>
+          {map1}
+        </ul>
       </>
     );
   }
