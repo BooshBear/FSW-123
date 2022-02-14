@@ -1,19 +1,20 @@
+import Todo from "./Todo";
 
-
-function TodoList(props) {
-    let stuff = props.data
-    let map1 = stuff.map((item, index) => {
-      return (
-        <li key={item.text}>{item.text}</li>
-      )
-    })
-    return (
-      <>
-        <ul>
-          {map1}
-        </ul>
-      </>
-    );
+function TodoList( {todos, completeTodo, deleteTodo} ) {
+  return (
+    <ul>
+      {todos.map((listTodos, index) => {
+        return (
+          <li key={index}>
+            <Todo todo = {listTodos}
+            completeTodo = {completeTodo}
+            deleteTodo = {deleteTodo}
+            />
+          </li>
+        );
+      })}
+    </ul>
+  );
   }
-  
+
 export default TodoList;
