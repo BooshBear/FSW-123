@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+    color: antiquewhite;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+#container {
+    background-color: rgb(30, 30, 30);
+    text-align: center;
+    padding: 32vh 5vh;
+}
+a {
+    text-decoration: none
+}
+span {
+    border: 3px solid purple;
+    border-radius: 50px;
+    background-color: purple;
+}
+span:hover {
+    border: 3px solid rgb(78, 0, 78);
+    background-color: rgb(78, 0, 78);
+}
+input {
+    color: black;
+}
+#ifEmpty {
+    font-size: 18px;
+    color: red;
+}
+#addBut {
+    color: black;
+}
+#delete {
+    color: red;
+}
+ul {
+    list-style: none;
+}

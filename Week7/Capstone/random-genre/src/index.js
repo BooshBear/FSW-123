@@ -5,7 +5,7 @@ import {
   Routes,
   Route
 } from "react-router-dom"
-import About from './routes/about';
+import Likes from './routes/Likes';
 import Genre from './routes/genre';
 import App from './App';
 
@@ -15,7 +15,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="genre" element={<Genre />} />
-          <Route path="about" element={<About />} />
+          <Route path="Likes" element={<Likes />} />
         </Route>
       </Routes>
     </BrowserRouter>

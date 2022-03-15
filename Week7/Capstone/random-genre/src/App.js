@@ -1,13 +1,11 @@
 import './App.css';
 import { Outlet, Link } from "react-router-dom";
-import { useState } from 'react';
-
 
 export default function App() {
   return (
-    <>
+    <div id="container">
       <header>
-        <h1>Welcome to the RMGG</h1>
+        <h1>Welcome to the R.M.G.G.</h1>
         <h2>(Random Music Genre Generator)</h2>
       </header>
       <main>
@@ -17,9 +15,10 @@ export default function App() {
           click the button below to begin your journey in finding the right
           music genre for you.
         </p>
+        <Link to="/Genre"><span>Generate Random Music Genres</span></Link>
+        <Link to="/Likes"><span>Your Like List</span></Link>
+        <Outlet />
       </main>
-      <Link to="/Genre">Random Music Genre</Link>
-      <Outlet />
-    </>
+    </div>
   );
 }
